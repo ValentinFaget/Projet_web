@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html  lang="fr-FR">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<link href="form.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="images.jpeg" type="image/x-icon"/>
+
+	<title>Gestion d'évènement sportifs</title>
+</head>
+<body>
+
+<header>
+		<img src="sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="100"/>
+		<form class="search"> 
+			<input class="search" placeholder="Recherche niggiz"  type="text" id="search" name="search"> </input>
+		</form> <br/><br/><br/>
+</header>
+
+
+<h1> NIGGI'SPORT</h1>
+
+
+<form method="POST" action="recup.php">
+	Prénom:<br/> <input class="prenom" type="text" name="prenom" id="prenom"/> <br/>
+	Nom:<br/> <input class="nom" type="text" name="nom" id="nom"/> <br/>
+	Mot de passe:<br/> <input class="mdp" type="password" name="mdp" id="mdp"/><br/>
+	E-mail:<br/> <input class="mail" type="mail" name="mail" id="mail"/><br/>
+	Date de naissance:<br/> <input class="date_naissance" type="date" name="date_naissance" id="date_naissance" /><br/>
+	Sexe:<br/> <input class="sexe" type="radio" name="sexe" id="sexe" value="homme"/> Homme
+	<input class="sexe" type="radio" name="sexe" id="sexe" value="femme"/> Femme <br/>
+	S'inscrire en tant que:<br/> <input class="role" type="radio" name="role" id="role" value="participant"/> Participant
+	<input class="role" type="radio" name="role" id="role" value="organisateur"/> Organisateur
+	<br/><br/>
+	
+
+
+
+<input type="submit" value="S'inscrire">
+</form>

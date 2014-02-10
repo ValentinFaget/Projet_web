@@ -4,12 +4,12 @@ header{background-image:url('bandeau_sup.PNG');
 background-repeat: no-repeat;}
 form.search{;
 position: absolute;
-left: 800px; top: 50px;
+left: 900px; top: 110px;
 }
 input.search{background-color: antiquewhite;}
 
 
-input.id, input.mdp{border:3px solid fuchsia;
+input.id, input.mdp,input.nom,input.prenom,input.sexe,input.mail, input.date_naissance, input.role {border:3px solid fuchsia;
 border-radius: 25px;}
 
 div.liste_activites{color: red;
