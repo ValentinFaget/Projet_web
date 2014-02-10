@@ -1,7 +1,8 @@
 
 header{background-image:url('bandeau_sup.PNG');
-background-color: red;}
-form.search{background-image:url('bandeau_sup.PNG');
+
+background-repeat: no-repeat;}
+form.search{;
 position: absolute;
 left: 800px; top: 50px;
 }
@@ -12,15 +13,17 @@ input.id, input.mdp{border:3px solid fuchsia;
 border-radius: 25px;}
 
 div.liste_activites{color: red;
-background-color:grey ;}
+background-color: ;}
 
 table{border-collapse: collapse;
 vertical-align: :top;
+margin-right: 400px;
+margin-left: 400px;
 }
 
 
 
-
+div.forum{margin-right: ;}
 
 
 tr{}
@@ -28,10 +31,20 @@ td{ border:3px solid fuchsia;
 
 background-color: greenyellow;
 vertical-align: middle;
-padding: 15px;
+padding: 15px
+text-align: center;
 
 }
 
 h1{ color:purple;
 text-decoration: underline;
 text-align: center;}
+
+
+img{ margin-left: 75px;
+margin-top: 5px;
+border-radius: 25px;
+border: 1px solid gold;
+
+
+}
