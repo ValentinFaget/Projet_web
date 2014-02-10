@@ -1,14 +1,26 @@
-form{background-color: pink;
+
+header{background-image:url('bandeau_sup.PNG');
+background-color: red;}
+form.search{background-image:url('bandeau_sup.PNG');
+position: absolute;
+left: 800px; top: 50px;
 }
-input{border:3px solid fuchsia;
+input.search{background-color: antiquewhite;}
+
+
+input.id, input.mdp{border:3px solid fuchsia;
 border-radius: 25px;}
 
 div.liste_activites{color: red;
-background-color: ;}
+background-color:grey ;}
 
 table{border-collapse: collapse;
 vertical-align: :top;
 }
+
+
+
+
 
 
 tr{}
