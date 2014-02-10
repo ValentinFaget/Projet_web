@@ -1,1 +1,25 @@
-nique ta race niggiz
+form{background-color: pink;
+}
+input{border:3px solid fuchsia;
+border-radius: 25px;}
+
+div.liste_activites{color: red;
+background-color: ;}
+
+table{border-collapse: collapse;
+vertical-align: :top;
+}
+
+
+tr{}
+td{ border:3px solid fuchsia;
+
+background-color: greenyellow;
+vertical-align: middle;
+padding: 15px;
+
+}
+
+h1{ color:purple;
+text-decoration: underline;
+text-align: center;}
