@@ -1,5 +1,5 @@
 
-header{background-image:url('bandeau_sup.PNG');
+header{background-image:url('image/bandeau_sup.PNG');
 background-repeat: no-repeat;}
 
 *{
@@ -47,17 +47,16 @@ text-align: center;
 
 }
 
-.title{ color: DodgerBlue;
+.title{ color: MediumTurquoise;
+	font-family:Helvetica, sans-serif;
 	font-size: xx-large; font-weight:bold;
-text-decoration: underline;
+	background-color:transparent;
 position: absolute;
-left: 400px; top: 90px}
+left: 400px; top: 80px}
 
 
 img{ margin-left: 75px;
 margin-top: 5px;
 border-radius: 25px;
 border: 1px solid gold;
-
-
 }

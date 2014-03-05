@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<?php
-		 	if ($_POST['nom']=="") or $_POST['prenom']=="" or $_POST['mdp']=="" or $_POST['mail']=="")
+		 	if ($_POST['nom']=="") 
 		 		{echo "Le nom n'est pas valide";}
 		 	if ($_POST['prenom']=="")
 		 		{echo "Le prénom n'est pas valide";}
