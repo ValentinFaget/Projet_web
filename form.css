@@ -2,7 +2,7 @@
 header{background-image:url('image/bandeau_sup.PNG');
 background-repeat: no-repeat;}
 
-*{
+*{font-family:Georgia,Times New Roman,Times,serif;
 	background-color: DarkGray;
 }
 .inscr{;
@@ -29,7 +29,6 @@ margin-left: 400px;
 }
 
 .intro{border-collapse: collapse;
-	border:3px solid fuchsia
 vertical-align: :top;
 margin-right: 420px;
 }
@@ -42,7 +41,6 @@ text-align: center; } */
 
 
 .titre{ color: MediumTurquoise;
-	font-family:Helvetica, sans-serif;
 	font-size: xx-large; font-weight:bold;
 	background-color:transparent;
 position: absolute;

@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html  lang="fr-FR">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -11,25 +10,26 @@
 <body>
 
 <header>
-		<img src="image/sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="100"/>
+		<img class="logo" src="image/sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="100"/>
+		<div class="titre"> NIGGI'SPORT </div>
 		<form class="search"> 
 			<input class="search" placeholder="Recherche"  type="text" id="search" name="search"> </input>
 		</form> <br/><br/><br/>
 </header>
 
 
-<div class="title"> NIGGI'SPORT </div>
+
 
 
 <form method="POST" action="recup2.php">
-	Prénom:<br/> <input class="prenom" type="text" name="prenom" id="prenom"/> <br/>
-	Nom:<br/> <input class="nom" type="text" name="nom" id="nom"/> <br/>
-	Mot de passe:<br/> <input class="mdp" type="password" name="mdp" id="mdp"/><br/>
-	E-mail:<br/> <input class="mail" type="mail" name="mail" id="mail"/><br/>
-	Date de naissance:<br/> <input class="date_naissance" type="date" name="date_naissance" id="date_naissance" /><br/>
-	Sexe:<br/> <input class="sexe" type="radio" name="sexe" id="sexe" value="homme"/> Homme
+	Prénom:<br/> <input class="prenom" type="text" name="prenom" id="prenom"/> <br/><br/>
+	Nom:<br/> <input class="nom" type="text" name="nom" id="nom"/> <br/><br/>
+	Mot de passe:<br/> <input class="mdp" type="password" name="mdp" id="mdp"/><br/><br/>
+	E-mail:<br/> <input class="mail" type="mail" name="mail" id="mail"/><br/><br/>
+	Date de naissance:<br/> <input class="date_naissance" type="date" name="date_naissance" id="date_naissance" /><br/><br/>
+	Sexe:<br/><br/> <input class="sexe" type="radio" name="sexe" id="sexe" value="homme"/> Homme
 	<input class="sexe" type="radio" name="sexe" id="sexe" value="femme"/> Femme <br/>
-	S'inscrire en tant que:<br/> <input class="role" type="radio" name="role" id="role" value="participant"/> Participant
+	<br/><br/>S'inscrire en tant que:<br/><br/> <input class="role" type="radio" name="role" id="role" value="participant"/> Participant
 	<input class="role" type="radio" name="role" id="role" value="organisateur"/> Organisateur
 	<br/><br/>
 	
