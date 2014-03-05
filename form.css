@@ -34,20 +34,14 @@ vertical-align: :top;
 margin-right: 420px;
 }
 
-div.forum{margin-right: ;}
 
-
-tr{}
-td{ border:3px solid fuchsia;
-
-background-color: greenyellow;
+/*  td{ border:3px solid fuchsia; 
 vertical-align: middle;
 padding: 15px
-text-align: center;
+text-align: center; } */
 
-}
 
-.title{ color: MediumTurquoise;
+.titre{ color: MediumTurquoise;
 	font-family:Helvetica, sans-serif;
 	font-size: xx-large; font-weight:bold;
 	background-color:transparent;
@@ -55,8 +49,16 @@ position: absolute;
 left: 400px; top: 80px}
 
 
-img{ margin-left: 75px;
+.logo{ margin-left: 75px;
 margin-top: 5px;
 border-radius: 25px;
 border: 1px solid gold;
 }
+
+.imgsport{
+border-radius: 25px;
+border: 1px solid gold;
+}
+
+.act{pading:2em;text-indent:20em}
+
