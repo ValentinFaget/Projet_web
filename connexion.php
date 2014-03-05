@@ -5,7 +5,7 @@
 
 $SERVEUR="localhost";
 $LOGIN="root";
-$MDP="root";
+$MDP="";
 $MABASE="projet_web";
 
 $CONNEXION=mysql_connect($SERVEUR,$LOGIN,$MDP);

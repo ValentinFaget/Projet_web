@@ -11,11 +11,7 @@ $sql="INSERT INTO personne (nom, prenom, mdp, mail_pers, date_naissance, sexe)
 VALUES
 ('".$_POST['nom']."','".$_POST['prenom']."','".$_POST['mdp']."','".$_POST['mail']."','".$_POST['date_naissance']."','".$_POST['sexe']."')";
 echo $sql;
-if (!mysql_query($CONNEXION,$sql))
-  {
-  die('Error: ' . mysql_error($CONNEXION));
-  }
-echo "1 record added";
+mysql_query($sql);
 
 mysql_close($CONNEXION);
 ?>
