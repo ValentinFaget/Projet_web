@@ -18,7 +18,7 @@
 	<br/>
 	<h2 align="center">
 Erreur lors de l'inscription!  <br/>
-<a href="inscription.html">Recommencer l'inscription</a>
+<a href="inscription.php">Recommencer l'inscription</a>
 </h2>
 </body>
 </html>

@@ -1,4 +1,3 @@
-<!doctype html>
 <html  lang="fr-FR">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -30,7 +29,23 @@
 	Sexe:<br/><br/> <input class="sexe" type="radio" name="sexe" id="sexe" value="homme"/> Homme
 	<input class="sexe" type="radio" name="sexe" id="sexe" value="femme"/> Femme <br/>
 	<br/><br/>S'inscrire en tant que:<br/><br/> <input class="role" type="radio" name="role" id="role" value="participant"/> Participant
-	<input class="role" type="radio" name="role" id="role" value="organisateur"/> Organisateur
+	<input class="role" type="radio" name="role" id="role" value="organisateur"/> Organisateur <br/><br/><br/>
+<?php
+require("connexion.php");
+echo "Selectionner l'association dont vous faites partie :<br/>" ;
+echo "(Aucunes_associations si vous ne faites partie d'aucunes associations)<br/>" ;
+	$MaRequete="SELECT * FROM association Order By id_asso";
+	$MonRs=mysql_query($MaRequete,$CONNEXION);
+	echo "<SELECT NAME='idasso'>";
+	echo "<OPTION SELECTED>  --  Choisir une association  --  </OPTION>";
+	while($Tuple=mysql_fetch_array($MonRs))
+	{
+		echo "<OPTION value='$Tuple[id_asso]'>$Tuple[nom_asso]</OPTION>";
+	}
+		echo "</SELECT><BR/><BR/>";
+		mysql_close($CONNEXION);
+
+?>
 	<br/><br/>
 	
 
