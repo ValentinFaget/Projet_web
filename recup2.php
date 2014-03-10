@@ -6,7 +6,8 @@ require_once "connexion.php";
   {
   echo "Failed to connect to MySQL: " . mysql_connect_error();
   }*/
-if ($nom=="" || $prenom=="" || $mdp=="" || $mail_pers=="" || $date_naissance=="")
+
+if ($_POST['nom']=="" || $_POST['prenom']=="" || $_POST['mdp']=="" || $_POST['mail']=="" )
 {
 
 <<<<<<< HEAD
@@ -31,16 +32,13 @@ else
 	$sql="INSERT INTO personne (nom, prenom, mdp, mail_pers, date_naissance, sexe, role)
 	VALUES
 	('".$_POST['nom']."','".$_POST['prenom']."','".$_POST['mdp']."','".$_POST['mail']."','".$_POST['date_naissance']."','".$_POST['sexe']."','".$_POST['role']."')";
-	header('Location: inscription_ok.php');
-	/*<<<<<<< HEAD
+	
 	mysql_query($sql);
 >>>>>>> 0e0834177ec3ceebd955d029e563a2e89d4d848d
 
-	=======
-	echo $sql;
-	mysql_query($sql);
-	>>>>>>> c8849360fb826c3bf4ede3eda206f113969e01b0
-	mysql_close($CONNEXION);*/
+
+	mysql_close($CONNEXION);
+	header('Location: inscription_ok.php');
 }
 
 ?>
