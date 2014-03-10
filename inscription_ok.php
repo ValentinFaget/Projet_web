@@ -4,7 +4,7 @@
 	<link href="form.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="image/images.jpeg" type="image/x-icon"/>
 
-	<title>Erreur lors de l'inscription</title>
+	<title>Inscription réussie! </title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 <br/>
 <h2 align="center">
 Inscription réussie! Bienvenue parmis nous! <br/>
-<a href="page_acceuil.html">Retour à la page d'acceuil</a>
+<a href="page_acceuil.html">Retour à la page d'accueil</a>
 </h2>
 
 </body>
