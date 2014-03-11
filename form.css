@@ -22,11 +22,6 @@ border-radius: 25px;}
 div.liste_activites{color: red;
 background-color: ;}
 
-table{border-collapse: collapse;
-vertical-align: :top;
-margin-right: 400px;
-margin-left: 400px;
-}
 
 .intro{border-collapse: collapse;
 vertical-align: :top;
@@ -58,5 +53,5 @@ border-radius: 25px;
 border: 1px solid gold;
 }
 
-.act{pading:2em;text-indent:20em}
+.act{border:3px solid fuchsia;}
 

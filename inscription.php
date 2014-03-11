@@ -37,7 +37,8 @@ echo "(Aucunes_associations si vous ne faites partie d'aucunes associations)<br/
 	$MaRequete="SELECT * FROM association Order By id_asso";
 	$MonRs=mysql_query($MaRequete,$CONNEXION);
 	echo "<SELECT NAME='idasso'>";
-	echo "<OPTION SELECTED>  --  Choisir une association  --  </OPTION>";
+	$asso_defaut=mysql_fetch_array($MonRs);
+	echo "<OPTION SELECTED> ".$asso_defaut['nom_asso']." </OPTION>";
 	while($Tuple=mysql_fetch_array($MonRs))
 	{
 		echo "<OPTION value='$Tuple[id_asso]'>$Tuple[nom_asso]</OPTION>";
