@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<?php session_start(); ?>
-<html>
-=======
 <html lang="fr-FR">
 <head>
 	<title>Connexion</title>
@@ -20,7 +16,6 @@
 			<input class="search" placeholder="Recherche"  type="text" id="search" name="search"> </input>
 		</form>
 </header>
->>>>>>> FETCH_HEAD
 <?php
 session_start();
 
@@ -44,7 +39,6 @@ if($_POST['mdp']==NULL)
 
 
 else {
-
 $sql="SELECT mdp FROM personne WHERE nom='".$_POST['nom']."' && prenom='".$_POST['prenom']."' ";
 
 $sqlmdp=mysql_query($sql);
@@ -52,26 +46,8 @@ $res = mysql_fetch_assoc($sqlmdp);
 $mdp = $res['mdp'];
 
 if ($_POST['mdp']==$mdp)
-<<<<<<< HEAD
-	{echo "connexion réussie";
-	echo "<meta http-equiv='Refresh' content='2; URL= page_accueil.php' />";
-	
-	$nom=$_POST['nom'];
-	$_SESSION['nom']=$nom;
-	$prenom=$_POST['prenom'];
-	$_SESSION['prenom']=$prenom;
-	
-	echo "<br/> nom: ".$_SESSION['nom']."";
-
-
-
-	}
-else echo " mauvais mot de passe";
-
-=======
 	{
 	echo "<h4 style='text-align:center'>Connexion réussie </h4>";
->>>>>>> FETCH_HEAD
 
 $sql="SELECT id_pers FROM personne WHERE nom='".$_POST['nom']."' && prenom='".$_POST['prenom']."' ";
 
