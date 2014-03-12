@@ -79,7 +79,17 @@ function utilisateur_connecte()
 				<img class="imgsport" src="image/sport.PNG" alt="sport" heigth="120"/>
 				<br/>
 				<a class="act" href="act_proposees.php"><h2>Voir les activités proposées</h2></a>
+				
+				
+				<?php 
+				$role="organisateur";
+				
 
+				if ($_SESSION['role']==$role)
+				{
+					echo "<a href='ajout_act.php'> Ajouter une activité </a>";
+				}
+				?>
 			</div>
 		
 		

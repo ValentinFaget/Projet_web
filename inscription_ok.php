@@ -17,7 +17,7 @@
 <br/>
 <h2 align="center">
 Inscription réussie! Bienvenue parmis nous! <br/>
-<a href="page_accueil.html">Retour à la page d'accueil</a>
+<a href="page_accueil.php">Retour à la page d'accueil</a>
 </h2>
 
 </body>

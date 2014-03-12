@@ -3,7 +3,7 @@ require_once "connexion.php";
 
 if ($_POST['nom']=="" || $_POST['prenom']=="" || $_POST['mdp']=="" || $_POST['mail']=="" )
 {
-	header('Location: inscription_erreur.php');
+	echo "<meta http-equiv='Refresh' content='0; URL=inscription_erreur.php') />";
 }
 else
 {
@@ -14,7 +14,7 @@ else
 	mysql_query($sql);
 
 	mysql_close($CONNEXION);
-	header('Location: inscription_ok.php');
+	echo "<meta http-equiv='Refresh' content='0; URL=inscription_ok.php') />";
 }
 
 ?>

@@ -1,3 +1,4 @@
+<html>
 <html  lang="fr-FR">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -10,7 +11,7 @@
 
 <header>
 		<img class="logo" src="image/sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="80"/>
-		<div class="titre"> NIGGI'SPORT - Inscription</div>
+		<div class="titre"> NIGGI'SPORT - Ajout d'activité</div>
  <br/>
 </header>
 
@@ -22,15 +23,13 @@
 
 <div style="position: absolute; top: 30 px; left:100px;">
 <form method="POST" action="recup2.php" >
-	Prénom:<br/> <input class="prenom" type="text" name="prenom" id="prenom"/> <br/><br/>
-	Nom:<br/> <input class="nom" type="text" name="nom" id="nom"/> <br/><br/>
-	Mot de passe:<br/> <input class="mdp" type="password" name="mdp" id="mdp"/><br/><br/>
-	E-mail:<br/> <input class="mail" type="mail" name="mail" id="mail"/><br/><br/>
-	Date de naissance:<br/> <input class="date_naissance" type="date" name="date_naissance" id="date_naissance" /><br/><br/>
-	Sexe:<br/><br/> <input class="sexe" type="radio" name="sexe" id="sexe" value="homme"/> Homme
-	<input class="sexe" type="radio" name="sexe" id="sexe" value="femme"/> Femme <br/>
-	<br/><br/>S'inscrire en tant que:<br/><br/> <input class="role" type="radio" name="role" id="role" value="participant"/> Participant
-	<input class="role" type="radio" name="role" id="role" value="organisateur"/> Organisateur <br/><br/><br/>
+	Nom:<br/> <input class="nom" type="text" name="type" id="nom"/> <br/><br/>
+	Date:<br/> <input class="date" type="date" name="date" id="date"/> <br/><br/>
+	Lieu:<br/> <input class="lieu" type="textarea" name="lieu" id="lieu"/><br/><br/>
+	Durée (en jours):<br/> <input class="duree" type="number" name="duree_en_j" id="duree"/><br/><br/>
+	Prix:<br/> <input class="prix" type="prix" name="prix" id="prix" /><br/><br/>
+	Nombre de places:<br/> <input class="nombre_place" type="number" name="nb_place_dispo" id="nombre_place" />
+	Description:<br/> <input class="description" type="textarea" name="description" id="description" />
 <?php
 require("connexion.php");
 echo "Selectionner l'association dont vous faites partie :<br/>" ;
