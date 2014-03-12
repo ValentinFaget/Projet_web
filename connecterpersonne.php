@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <html>
 <?php
 
@@ -19,6 +20,7 @@ if($_POST['mdp']==NULL)
 
 
 else {
+
 $sql="SELECT mdp FROM personne WHERE nom='".$_POST['nom']."' && prenom='".$_POST['prenom']."' ";
 
 $sqlmdp=mysql_query($sql);
@@ -27,7 +29,17 @@ $mdp = $res['mdp'];
 
 if ($_POST['mdp']==$mdp)
 	{echo "connexion réussie";
-	echo "<meta http-equiv='Refresh' content='2; URL= page_accueil_participant.php' />";
+	echo "<meta http-equiv='Refresh' content='2; URL= page_accueil.php' />";
+	
+	$nom=$_POST['nom'];
+	$_SESSION['nom']=$nom;
+	$prenom=$_POST['prenom'];
+	$_SESSION['prenom']=$prenom;
+	
+	echo "<br/> nom: ".$_SESSION['nom']."";
+
+
+
 	}
 else echo " mauvais mot de passe";
 

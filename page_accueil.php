@@ -1,0 +1,88 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+
+<html  lang="fr-FR">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<link href="form.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="image/images.jpeg" type="image/x-icon"/>
+
+	<title>Gestion d'évènement sportifs</title>
+</head>
+<body>
+
+<header>
+		<img class="logo" src="image/sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="100"/>
+		<div class="titre"> NIGGI'SPORT </div>
+		<form class="search"> 
+			<input class="search" placeholder="Recherche"  type="text" id="search" name="search"> </input>
+		</form>
+</header>
+<br/>
+
+		
+		<div class="inscr">
+			<?php
+			
+			$nom=$_SESSION['nom'];
+				echo "bonjour ".$nom;
+			
+
+		
+
+		?>
+
+		<form method="POST" action="connecterpersonne.php">
+			CONNEXION: 
+			<br/>
+
+			Nom:<br/>
+			<input class="nom" type="text" id="nom" name="nom">
+			</input>
+			<br/>
+			Prénom:<br/>
+			<input class="prenom" type="text" id="prenom" name="prenom">
+			</input>
+			<br/>
+			Mot de passe: <br/>
+		<input class="mdp" type="password" id="mdp" name="mdp">
+		</input>
+		<input value="Se connecter" type="submit" ></input>
+
+		</form>
+		<br/>
+		<br/>
+
+		<a href="inscription.php"> S'INSCRIRE </a> 
+		
+		
+		
+		</div>
+		
+		
+
+
+		
+
+
+<div class="intro">
+	<p> <h2>Présentation:</h2> <h4>Site de gestions d'évènements sportifs destiné à faciliter l'organisation de tout type de manisfestation sportive.<br/>
+		Ce site a pour but de reccueillir des évènements sportifs pour permettre aux utilisateurs de pouvoir s'y préinscrire puis s'inscrire. <br/>Les associations peuvent, quant à elle, proposer des activités auxquelles on pourra s'inscrire.</h4>
+<br/>
+	</p>
+
+<hr/>
+</div>
+<hr/>
+<br/>
+			<div class="liste_activites">
+				<img class="imgsport" src="image/sport.PNG" alt="sport" heigth="120"/>
+				<br/>
+				<a class="act" href="act_proposees.html"><h2>Voir les activités proposées</h2></a>
+
+			</div>
+		
+		
+</body>
+
+</html>
