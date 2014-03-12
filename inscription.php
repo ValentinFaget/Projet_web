@@ -20,7 +20,8 @@
 
 <br/><br/>
 
-<form method="POST" action="recup2.php" style="position: absolute; top: 30 px; left:100px;">
+<div style="position: absolute; top: 30 px; left:100px;">
+<form method="POST" action="recup2.php" >
 	Prénom:<br/> <input class="prenom" type="text" name="prenom" id="prenom"/> <br/><br/>
 	Nom:<br/> <input class="nom" type="text" name="nom" id="nom"/> <br/><br/>
 	Mot de passe:<br/> <input class="mdp" type="password" name="mdp" id="mdp"/><br/><br/>
@@ -52,6 +53,10 @@ echo "(Aucunes_associations si vous ne faites partie d'aucunes associations)<br/
 
 <input type="submit" value="S'inscrire">
 </form>
+<form action="page_accueil.php" >
+	<input value="Retour à la page d'accueil" type="submit" ></input> 
+</form>
+</div>
 
 </body>
 

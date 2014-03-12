@@ -2,7 +2,6 @@
 
 <?php
 
-
 $SERVEUR="localhost";
 $LOGIN="root";
 $MDP="";

@@ -1,5 +1,5 @@
 
-<html>
+<html lang="fr-FR">
 
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -37,59 +37,25 @@
 		<td> Nb de place(s) restantes(s) </td>
 		<td> Date </td>
 		<td> Durée </td>
-	</tr> 
+		<td>       </td>
+	</tr> <br/>
 <?php
 require("connexion.php");
 	$MaRequete="SELECT * FROM activite Order By id_activite";
 	$MonRs=mysql_query($MaRequete,$CONNEXION);
 		while($Tuple=mysql_fetch_array($MonRs))
 	{
-?>
-<tr>
-	<td>
-<?php
-		echo "$Tuple[type] ";
-?>
-	</td>
-	<td>
-<?php
-		echo "$Tuple[prix] euros"
-?>
-	</td>
-	<td>
-<?php
-		echo "$Tuple[lieu]"
-?>
-	</td>
-	<td>
-<?php
-		echo "$Tuple[nb_place_dispo]"
-?>
-	</td>
-	<td>
-<?php
-		echo "$Tuple[date]"
-?>
-	</td>
-	<td>
-<?php
-		echo "$Tuple[duree_en_j] jours"
-?>
-	</td>
-</tr>
-<?php
+		echo "<tr><td> $Tuple[type] </td>";
+		echo "<td> $Tuple[prix] euros </td>";
+		echo "<td> $Tuple[lieu] </td>";
+		echo "<td> $Tuple[nb_place_dispo] </td>";
+		echo "<td> $Tuple[date] </td>";
+		echo "<td> $Tuple[duree_en_j] jours </td>";
+		echo "<td> <a href='inscription_act.php'> S'INSCRIRE </a> </td><br/></tr>";
 	}
 ?>
 
-
 </table>
-
-
-
-
-
-
-
 
 </body>
 </html>
