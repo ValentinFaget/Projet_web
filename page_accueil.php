@@ -1,5 +1,12 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
+<?php
+session_start();
+
+function utilisateur_connecte()
+{
+	return isset($_SESSION['nom']) && isset($_SESSION['prenom']) && !empty($_SESSION['nom']) && !empty($_SESSION['prenom']);
+}
+
+?>
 
 <html  lang="fr-FR">
 <head>
@@ -20,18 +27,17 @@
 </header>
 <br/>
 
-		
 		<div class="inscr">
-			<?php
-			
-			$nom=$_SESSION['nom'];
-				echo "bonjour ".$nom;
-			
+<?php
+		if(utilisateur_connecte())
+		{
 
-		
-
-		?>
-
+	echo "Bienvenue ".$_SESSION['prenom']." ".$_SESSION['nom']." <br/><br/>";
+	echo "<form action='deconnexion.php'><input value='Déconnexion' type='submit' ></input> </form>  <br/>
+			 <form action='modifier_compte.php'><input value='Modifier son compte' type='submit' ></input></form>" ;
+		}
+		else {
+?>
 		<form method="POST" action="connecterpersonne.php">
 			CONNEXION: 
 			<br/>
@@ -45,24 +51,18 @@
 			</input>
 			<br/>
 			Mot de passe: <br/>
-		<input class="mdp" type="password" id="mdp" name="mdp">
+		<input class="mdp" type="password" id="mdp" name="mdp"><br/>
 		</input>
 		<input value="Se connecter" type="submit" ></input>
-
 		</form>
 		<br/>
 		<br/>
 
-		<a href="inscription.php"> S'INSCRIRE </a> 
-		
-		
-		
+		<a href="inscription.php"> S'INSCRIRE </a>
+<?php
+			}
+?>
 		</div>
-		
-		
-
-
-		
 
 
 <div class="intro">
@@ -78,7 +78,7 @@
 			<div class="liste_activites">
 				<img class="imgsport" src="image/sport.PNG" alt="sport" heigth="120"/>
 				<br/>
-				<a class="act" href="act_proposees.html"><h2>Voir les activités proposées</h2></a>
+				<a class="act" href="act_proposees.php"><h2>Voir les activités proposées</h2></a>
 
 			</div>
 		

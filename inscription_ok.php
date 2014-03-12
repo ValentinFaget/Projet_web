@@ -1,4 +1,4 @@
-<html>
+<html lang="fr-FR">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
 	<link href="form.css" rel="stylesheet" type="text/css" />

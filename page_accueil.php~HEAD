@@ -1,4 +1,6 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
+
 <html  lang="fr-FR">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -18,7 +20,18 @@
 </header>
 <br/>
 
+		
 		<div class="inscr">
+			<?php
+			
+			$nom=$_SESSION['nom'];
+				echo "bonjour ".$nom;
+			
+
+		
+
+		?>
+
 		<form method="POST" action="connecterpersonne.php">
 			CONNEXION: 
 			<br/>
@@ -40,8 +53,16 @@
 		<br/>
 		<br/>
 
-		<a href="inscription.php"> S'INSCRIRE </a>
+		<a href="inscription.php"> S'INSCRIRE </a> 
+		
+		
+		
 		</div>
+		
+		
+
+
+		
 
 
 <div class="intro">
