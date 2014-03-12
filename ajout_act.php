@@ -22,14 +22,15 @@
 <br/><br/>
 
 <div style="position: absolute; top: 30 px; left:100px;">
-<form method="POST" action="recup2.php" >
+<form method="POST" action="recup_act.php" >
 	Nom:<br/> <input class="nom" type="text" name="type" id="nom"/> <br/><br/>
 	Date:<br/> <input class="date" type="date" name="date" id="date"/> <br/><br/>
 	Lieu:<br/> <input class="lieu" type="textarea" name="lieu" id="lieu"/><br/><br/>
 	Durée (en jours):<br/> <input class="duree" type="number" name="duree_en_j" id="duree"/><br/><br/>
 	Prix:<br/> <input class="prix" type="prix" name="prix" id="prix" /><br/><br/>
-	Nombre de places:<br/> <input class="nombre_place" type="number" name="nb_place_dispo" id="nombre_place" />
-	Description:<br/> <input class="description" type="textarea" name="description" id="description" />
+	Nombre de places:<br/> <input class="nombre_place" type="number" name="nb_place_dispo" id="nombre_place" /><br/><br/>
+	Description:<br/> <input class="description" type="textarea" name="description" id="description" /><br/>
+
 <?php
 require("connexion.php");
 echo "Selectionner l'association dont vous faites partie :<br/>" ;
@@ -50,7 +51,7 @@ echo "(Aucunes_associations si vous ne faites partie d'aucunes associations)<br/
 	<br/><br/>
 	
 
-<input type="submit" value="S'inscrire">
+<input type="submit" value="Ajouter">
 </form>
 <form action="page_accueil.php" >
 	<input value="Retour à la page d'accueil" type="submit" ></input> 
