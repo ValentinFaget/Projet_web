@@ -9,12 +9,6 @@ background-repeat: no-repeat;}
 position: absolute;
 left: 1100px; top: 156px;}
 
-form.search{;
-position: absolute;
-left: 900px; top: 110px;
-}
-input.search{background-color: antiquewhite;}
-
 
 input.id, input.mdp,input.nom,input.prenom,input.sexe,input.mail, input.date_naissance, input.role {border:3px solid fuchsia;
 border-radius: 25px;}
@@ -27,13 +21,6 @@ background-color: ;}
 vertical-align: :top;
 margin-right: 420px;
 }
-
-
-/*  td{ border:3px solid fuchsia; 
-vertical-align: middle;
-padding: 15px
-text-align: center; } */
-
 
 .titre{ color: MediumTurquoise;
 	font-size: xx-large; font-weight:bold;
