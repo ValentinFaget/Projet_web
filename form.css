@@ -10,7 +10,7 @@ position: absolute;
 left: 1100px; top: 156px;}
 
 
-input.id, input.mdp,input.nom,input.prenom,input.sexe,input.mail, input.date_naissance, input.role {border:3px solid fuchsia;
+input {border:3px solid fuchsia;
 border-radius: 25px;}
 
 div.liste_activites{color: red;
