@@ -8,9 +8,9 @@ if ($_POST['type']=="" || $_POST['date']=="" || $_POST['lieu']=="" || $_POST['du
 }
 else
 {
-	$sql="INSERT INTO activite (type, date, lieu, duree_en_j, prix, nb_place_dispo, description, id_asso)
+	$sql="INSERT INTO activite (type, date, lieu, duree_en_j, prix, nb_place_dispo, description, id_equipe, id_asso)
 	VALUES
-	('".$_POST['type']."','".$_POST['date']."','".$_POST['lieu']."','".$_POST['duree_en_j']."','".$_POST['prix']."','".$_POST['nb_place_dispo']."','".$_POST['description']."')";
+	('".$_POST['type']."','".$_POST['date']."','".$_POST['lieu']."','".$_POST['duree_en_j']."','".$_POST['prix']."','".$_POST['nb_place_dispo']."','".$_POST['description']."','1','".$_POST['id_asso']."')";
 
 	mysql_query($sql);
 

@@ -21,9 +21,6 @@ function utilisateur_connecte()
 <header>
 		<img class="logo" src="image/sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="100"/>
 		<div class="titre"> NIGGI'SPORT </div>
-		<form class="search"> 
-			<input class="search" placeholder="Recherche"  type="text" id="search" name="search"> </input>
-		</form>
 </header>
 <br/>
 
@@ -82,13 +79,19 @@ function utilisateur_connecte()
 				
 				
 				<?php 
+				if(utilisateur_connecte())
+				{
 				$role="organisateur";
 				
-
-				if ($_SESSION['role']==$role)
+				if($_SESSION['role']!="")
 				{
-					echo "<a href='ajout_act.php'> Ajouter une activité </a>";
+					if ($_SESSION['role']==$role)
+					{
+						echo "<a href='ajout_act.php'> Ajouter une activité </a>";
+					}					
 				}
+				}
+
 				?>
 			</div>
 		

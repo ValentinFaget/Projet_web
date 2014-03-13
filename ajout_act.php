@@ -1,4 +1,3 @@
-<html>
 <html  lang="fr-FR">
 <head>
 	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
@@ -24,7 +23,7 @@
 <div style="position: absolute; top: 30 px; left:100px;">
 <form method="POST" action="recup_act.php" >
 	Nom:<br/> <input class="nom" type="text" name="type" id="nom"/> <br/><br/>
-	Date:<br/> <input class="date" type="date" name="date" id="date"/> <br/><br/>
+	Date de début:<br/> <input class="date" type="date" name="date" id="date"/> <br/><br/>
 	Lieu:<br/> <input class="lieu" type="textarea" name="lieu" id="lieu"/><br/><br/>
 	Durée (en jours):<br/> <input class="duree" type="number" name="duree_en_j" id="duree"/><br/><br/>
 	Prix:<br/> <input class="prix" type="prix" name="prix" id="prix" /><br/><br/>

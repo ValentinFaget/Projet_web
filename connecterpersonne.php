@@ -12,9 +12,7 @@
 <header>
 		<img class="logo" src="image/sentez-vous_sport_2013.gif" alt="logo_site" width="100" heigth="100"/>
 		<div class="titre"> NIGGI'SPORT </div>
-		<form class="search"> 
-			<input class="search" placeholder="Recherche"  type="text" id="search" name="search"> </input>
-		</form>
+
 </header>
 <?php
 session_start();
