@@ -16,7 +16,7 @@
 
 <br/>
 <h2 align="center">
-L'association a bien été ajoutée! <br/>
+L'activité a bien été ajoutée! <br/>
 <a href="page_accueil.php">Retour à la page d'accueil</a>
 </h2>
 

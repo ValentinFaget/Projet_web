@@ -51,7 +51,9 @@ require("connexion.php");
 		echo "<td> $Tuple[nb_place_dispo] </td>";
 		echo "<td> $Tuple[date] </td>";
 		echo "<td> $Tuple[duree_en_j] jours </td>";
-		echo "<td> <a href='inscription_act.php?id=$Tuple[id_activite]'> S'inscrire pour ".$Tuple['type']."</a> </td><br/></tr>";
+		echo "<td> <a href='inscription_act.php?id=$Tuple[id_activite]'> S'inscrire pour ".$Tuple['type']."</a> </td>";
+		echo "<td> <a href='paiement_act.php?id=$Tuple[id_activite]'> Payer pour ".$Tuple['type']."</a> </td><br/></tr>";
+
 	}
 ?>
 </table>

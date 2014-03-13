@@ -87,7 +87,9 @@ function utilisateur_connecte()
 				{
 					if ($_SESSION['role']==$role)
 					{
-						echo "<a href='ajout_act.php'> Ajouter une activité </a>";
+						echo "<a href='ajout_act.php'> Ajouter une activité </a><br/>";
+
+						echo "<br/><a href='ajout_asso.php'> Ajouter une association au site </a>";
 					}					
 				}
 				}

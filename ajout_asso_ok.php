@@ -17,6 +17,7 @@
 <br/>
 <h2 align="center">
 L'association a bien été ajoutée! <br/>
+L'adresse mail de l'association est la vôtre <br/>
 <a href="page_accueil.php">Retour à la page d'accueil</a>
 </h2>
 

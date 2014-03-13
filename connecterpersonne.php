@@ -53,17 +53,29 @@ $sqlmdp=mysql_query($sql);
 $res = mysql_fetch_assoc($sqlmdp);
 $id = $res['id_pers'];
 
+
 $sql="SELECT role FROM personne WHERE nom='".$_POST['nom']."' && prenom='".$_POST['prenom']."' ";
 
 $sqlmdp=mysql_query($sql);
 $res = mysql_fetch_assoc($sqlmdp);
 $role = $res['role'];
 
+
+$sql="SELECT mail_pers FROM personne WHERE nom='".$_POST['nom']."' && prenom='".$_POST['prenom']."' ";
+
+$sqlmdp=mysql_query($sql);
+$res = mysql_fetch_assoc($sqlmdp);
+$mail_pers = $res['mail_pers'];
+
+
 	$_SESSION['id']=$id;
 	$_SESSION['role']=$role;
+	$_SESSION['mail_pers']=$mail_pers;
 	$_SESSION['nom']=$_POST['nom'];
 	$_SESSION['prenom']=$_POST['prenom'];
 	$_SESSION['mdp']=$_POST['mdp'];
+
+
 	}
 else { 
 	echo "<h4 style='text-align:center'> Mauvais mot de passe </h4><br/>";

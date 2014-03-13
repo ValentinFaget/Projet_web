@@ -15,7 +15,7 @@ else
 	mysql_query($sql);
 
 	mysql_close($CONNEXION);
-	echo "<meta http-equiv='Refresh' content='0; URL=ajout_ok.php') />";
+	echo "<meta http-equiv='Refresh' content='0; URL=ajout_act_ok.php') />";
 }
 
 ?>
